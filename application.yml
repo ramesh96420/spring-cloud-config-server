@@ -1,0 +1,21 @@
+# Eureka server connection details
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8083/eureka
+  instance:
+    hostname: localhost
+    
+# All Microservice end points
+microservice:
+  employee-service:
+    endpoints:
+      endpoint:
+        uri:  http://EMPLOYEE-SERVICE/emp/employee-data
+        countries-uri:  http://COUNTRIES-SERVICE/countries/countries-list       
+  countries-service:
+    endpoints:
+      endpoint:
+        uri:  http://COUNTRIES-SERVICE/countries/countries-list
