@@ -19,3 +19,9 @@ microservice:
     endpoints:
       endpoint:
         uri:  http://COUNTRIES-SERVICE/countries/countries-list
+        
+        
+#insurance provider url
+insurance:
+  provider:
+    url:  http://localhost:8090/insurance-service/getAllPlans
